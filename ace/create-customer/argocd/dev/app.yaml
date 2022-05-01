@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: create-customer
   annotations:
-    argocd.argoproj.io/sync-wave: "200"
+    argocd.argoproj.io/sync-wave: "100"
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
