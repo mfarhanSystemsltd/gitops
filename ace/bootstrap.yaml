@@ -1,13 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-<<<<<<< HEAD
   name: c360-dev
-=======
-  name: C360
-  annotations:
-    argocd.argoproj.io/sync-wave: "100"
->>>>>>> e091a7363220ec0f389e0b905762d8d3331f560f
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
