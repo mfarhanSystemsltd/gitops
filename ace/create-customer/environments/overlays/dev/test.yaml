@@ -1,22 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-<<<<<<< HEAD
-  name: c360-dev
-=======
-  name: C360
-  annotations:
-    argocd.argoproj.io/sync-wave: "100"
->>>>>>> e091a7363220ec0f389e0b905762d8d3331f560f
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
+  name: testing
 spec:
   destination:
     namespace: argocd
     server: https://kubernetes.default.svc
-  project: applications
+  project: default
   source:
-    path: ace/argocd/dev
+    path: ace/create-customer/environments/base
     repoURL: https://github.com/mfarhanSystemsltd/gitops.git
     targetRevision: master
   syncPolicy:
